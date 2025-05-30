@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css"/>
+
+
+    <title>UkrainDelights</title>
+
+<section class="dropdown">
+    <button>Меню</button>
+    <div class="dropdown-content">
+        <ul>
+            <li><a href="#">Пункт 1</a></li>
+            <li><a href="#">Пункт 2</a></li>
+            <li><a href="#">Пункт 3</a></li>
+        </ul>
+    </div>
+</section>
     
+</head>
+
+<body>
+     <section><h1>UkrainDelights</h1>
+    
+   <!-- <h2>Каталог Товарів</h2> -->
+    
+    
+    <ul>
+        <li>
+
+            <div class="product">
+                <h3>Товар 1</h3>
+                <p>Опис товару 1</p>
+                <button onclick="addToCart('Товар 1')">Додати в кошик</button>  </div>
+
+        </li>
+        <li>
+
+   <div class="product">
+        <h3>Товар 1</h3>
+        <p>Опис товару 1</p>
+        <button onclick="addToCart('Товар 1')">Додати в кошик</button>
+    </div>
+
+        </li>
+        <li>
+
+   <div class="product">
+        <h3>Товар 1</h3>
+        <p>Опис товару 1</p>
+        <button onclick="addToCart('Товар 1')">Додати в кошик</button>
+    </div>
+
+        </li>
+        <li>
+
+   <div class="product">
+        <h3>Товар 1</h3>
+        <p>Опис товару 1</p>
+        <button onclick="addToCart('Товар 1')">Додати в кошик</button>
+    </div>
+
+        </li>
+    </ul>
+    
+    
+    <h2>Кошик</h2>
+    <div class="cart" id="cart">
+        <p>Кошик порожній.</p>
+        </div>
+    
+    </section>
+
+
+    <script>
+        let cart = [];
+
+        function addToCart(product) {
+            cart.push(product);
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartDiv = document.getElementById('cart');
+            cartDiv.innerHTML = cart.length > 0 ? cart.join(', ') : 'Кошик порожній.';
+        }
+    </script>
 </body>
+<footer>
+    <h1>Соціальні мережі</h1>
+    <ul>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+    </ul>
+
+</footer>
+
 </html>
