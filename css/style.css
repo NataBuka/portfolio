@@ -138,7 +138,7 @@ body {
 
 /*  style for CATALOG  */
 
-body {
+/*body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
@@ -151,6 +151,36 @@ body {
 
 .cart {
     margin-top: 20px;
+}*/
+
+
+
+.product-list ul {
+    list-style-type: none;
+    /* Вимкнути маркери */
+    padding: 0;
+}
+
+.product-list li {
+    margin: 15px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.product-list a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.product-list img {
+    max-width: 100px;
+    /* Обмежити ширину зображення */
+    margin-right: 15px;
+    /* Відступ між зображенням та текстом */
 }
 
 

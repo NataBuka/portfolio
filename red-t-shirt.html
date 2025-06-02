@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+        <header>
+        
+            <section class="dropdown">
+                <button>Menu</button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Пункт 1</a></li>
+                        <li><a href="#">Пункт 2</a></li>
+                        <li><a href="#">Пункт 3</a></li>
+                    </ul>
+                </div>
+            </section>
+        
+            <section class="search-container">
+                <h2>Search</h2>
+                <form action="/search" method="get">
+                    <input type="text" name="query" placeholder="Введіть ваш запит..." required>
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+        
+            <a href="./favorites.html">Favorites</a>
+            <a href="./shoppingCart.html">Your Cart</a>
+            <a href="./profile.html">Profile</a>
+            <a href="./index.html">Home</a>
+        </header>
+        
+        
+        </header>
+    </header>
+    
+
+    <div class="container">
+        <h1>Product 1</h1>
+        <img src="product1.jpg" alt="Product 1 Image">
+        <p>Description of Product 1.</p>
+        <p>Price: $10.00</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <script>
+        let cart = [];
+
+        function addToCart(product) {
+            cart.push(product);
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartDiv = document.getElementById('cart');
+            cartDiv.innerHTML = cart.length > 0 ? cart.join(', ') : 'The cart is empty.';
+        }
+    </script>
+
+</body>
+
+
+<footer>
+    <h1>Соціальні мережі</h1>
+    <ul>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+    </ul>
+
+</footer>
+
+
+
+
+</html>
