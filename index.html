@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css"/>
+    <a href="./favorites.html">Favorites</a>
 
 
     <title>UkrainDelights</title>
 
 <section class="dropdown">
-    <button>Меню</button>
+    <button>Menu</button>
     <div class="dropdown-content">
         <ul>
             <li><a href="#">Пункт 1</a></li>
@@ -18,6 +19,23 @@
             <li><a href="#">Пункт 3</a></li>
         </ul>
     </div>
+</section>
+
+<section class="search-container">
+    <h2>Search</h2>
+    <form action="/search" method="get">
+        <input type="text" name="query" placeholder="Введіть ваш запит..." required>
+        <button type="submit">Search</button>
+    </form>
+</section>
+
+<section class="profile-card">
+    <img src="https://via.placeholder.com/120" alt="Фото профілю" class="profile-image">
+    <ul class="profile-info">
+        <li class="profile-name">Іван Іваненко</li>
+        <li class="profile-email">ivan@example.com</li>
+        <li class="profile-bio">Люблю кодити, подорожувати та вчити нове.</li>
+    </ul>
 </section>
     
 </head>
@@ -32,44 +50,44 @@
         <li>
 
             <div class="product">
-                <h3>Товар 1</h3>
+                <h3>article 1</h3>
                 <p>Опис товару 1</p>
-                <button onclick="addToCart('Товар 1')">Додати в кошик</button>  </div>
+                <button onclick="addToCart('article 1')">Add to cart</button>  </div>
 
         </li>
         <li>
 
    <div class="product">
-        <h3>Товар 1</h3>
+        <h3>article 2</h3>
         <p>Опис товару 1</p>
-        <button onclick="addToCart('Товар 1')">Додати в кошик</button>
+        <button onclick="addToCart('article 2')">Add to cart</button>
     </div>
 
         </li>
         <li>
 
    <div class="product">
-        <h3>Товар 1</h3>
+        <h3>article 3</h3>
         <p>Опис товару 1</p>
-        <button onclick="addToCart('Товар 1')">Додати в кошик</button>
+        <button onclick="addToCart('article 3')">Add to cart</button>
     </div>
 
         </li>
         <li>
 
    <div class="product">
-        <h3>Товар 1</h3>
+        <h3>article 4</h3>
         <p>Опис товару 1</p>
-        <button onclick="addToCart('Товар 1')">Додати в кошик</button>
+        <button onclick="addToCart('article 4')">Add to cart</button>
     </div>
 
         </li>
     </ul>
     
     
-    <h2>Кошик</h2>
+    <h2>Basket</h2>
     <div class="cart" id="cart">
-        <p>Кошик порожній.</p>
+        <p>The cart is empty.</p>
         </div>
     
     </section>
@@ -85,9 +103,12 @@
 
         function updateCart() {
             const cartDiv = document.getElementById('cart');
-            cartDiv.innerHTML = cart.length > 0 ? cart.join(', ') : 'Кошик порожній.';
+            cartDiv.innerHTML = cart.length > 0 ? cart.join(', ') : 'The cart is empty.';
         }
     </script>
+
+
+
 </body>
 <footer>
     <h1>Соціальні мережі</h1>

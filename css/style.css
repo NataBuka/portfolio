@@ -61,6 +61,100 @@ header {
         /* Поміщає зображення позаду тексту */
 }
 
+
+/*   Style for SEARCH  */
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.search-container {
+    margin: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #218838;
+}
+
+
+/* finish style for SEARCH  */
+
+
+
+/*      style for PROFILE    */
+
+.profile-card {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-email {
+    font-size: 16px;
+    color: gray;
+}
+
+.profile-bio {
+    margin-top: 10px;
+    font-style: italic;
+}
+ /*finish style for PROFILE  */
+
+
+
+/*  style for CATALOG  */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.cart {
+    margin-top: 20px;
+}
+
+
+/* finish style for CATALOG  */
 h1{
     color:var(--basc-text-color);
 
@@ -69,22 +163,7 @@ h1{
 p{
     color: var(--basc-text-color);   
 }
-/*/*.header-image {
-    background-image: url('pictures/a_ukrainian_flag_w_image_.png');
-    /* Вкажіть URL вашої картинки */
-/* background-size: cover;*/
-/* Розтягує картинку */
-/* background-position: center;*/
-/* Центрує картинку */
-/*width: 100%;
-height: 300px;
-/* Висота хедера */
-/*position: absolute;
-/*top: 0;
-left: 0;
-z-index: -1;
-/* Поміщає зображення позаду тексту */
-/*}*/
+
 
 
 main {
@@ -118,4 +197,72 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+  /*                          FAVORITES                     */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+
+  .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+  }
+
+  h1 {
+      text-align: center;
+      color: #333;
+  }
+
+  .product {
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 15px 0;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+  }
+
+  .product h2 {
+      font-size: 1.5em;
+      color: #555;
+  }
+
+  .product p {
+      color: #777;
+  }
+
+  .product button {
+      background: #28a745;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+  }
+
+  .product button:hover {
+      background: #218838;
+  }
+
+  @media (max-width: 600px) {
+      .product {
+          padding: 10px;
+      }
+  }
+/*                         finish FAVORITES                          */
+  
 
