@@ -7,11 +7,39 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<header>
-    <a href="./index.html">Home</a>
-    <a href="./shoppingCart.html">Your Cart</a>
-    <a href="./favorites.html"></a>
-</header>
+    <header>
+    
+        <section class="dropdown">
+            <button>Menu</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="./red-t-shirt.html">Пункт 1</a></li>
+                    <li><a href="./yelow-pant.html">Пункт 2</a></li>
+                    <li><a href="./red-t-shirt.html">Пункт 3</a></li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="search-container">
+            <!-- <h2>Search</h2> -->
+            <form action="/search" method="get">
+                <input type="text" name="query" placeholder="Введіть ваш запит..." required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+    
+    
+        <ul>
+            <li><a href="./shoppingCart.html">Your Cart</a></li>
+            <li><a href="./favorites.html">Favorites</a></li>
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+    
+    
+    
+        <h1>UkrainDelights</h1>
+    
+        </header>
 
     <section class="profile-card">
         <img src="https://via.placeholder.com/120" alt="Фото профілю" class="profile-image">

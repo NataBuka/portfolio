@@ -10,10 +10,38 @@
 
 <body>
     <header>
-      <a href="./index.html">Home</a>
-      <a href="./shoppingCart.html">Your Cart</a>
-      <a href="./profile.html">Profile</a>
-    </header>
+    
+        <section class="dropdown">
+            <button>Menu</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="./red-t-shirt.html">Пункт 1</a></li>
+                    <li><a href="./yelow-pant.html">Пункт 2</a></li>
+                    <li><a href="./red-t-shirt.html">Пункт 3</a></li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="search-container">
+            <!-- <h2>Search</h2> -->
+            <form action="/search" method="get">
+                <input type="text" name="query" placeholder="Введіть ваш запит..." required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+    
+    
+        <ul>
+            <li><a href="./shoppingCart.html">Your Cart</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+    
+    
+    
+        <h1>UkrainDelights</h1>
+    
+        </header>
     <section>
     <div class="container">
         <h1>Your Favorite Products</h1>
