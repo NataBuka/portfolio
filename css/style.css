@@ -1,54 +1,29 @@
 :root {
     --brand-color: #2196f3;
-    --basc-text-color: #2e229b;
-    --black-color: #212121;
-    --wite-color: #ffffff;
-    --light-black-color: #2f303a;
-    --logo-text-color: #000000;
-    --secondary-fill-color: #f5f4fa;
-    --background-portfolio-color: #e5e5e5;
-    --secondary-text-color: rgba(255, 255, 255, 0.6);
-    --button-color: #188ce8;
-    --button-portfolio-fill: #f5f4fa;
-    --borders-line: #ececec;
-    --border-line-img: #eeeeee;
-    --card-set-get: 30px;
-    --img-overlay-color: rgba(47, 48, 58, 0.4);
-    --hero-bg-color: #c4c4c4;
-    --border-klient-color: rgba(175, 177, 184, 1);
-    --link-color-in-footer: rgba(255, 255, 255, 0.1);
-    --btn-close-border-color: rgba(0, 0, 0, 0.1);
-    --label-color: rgba(47, 48, 58, 0.8);
-    --card-overley: rgba(33, 150, 243, 0.9); }
+  
 
-
-
-
-
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
 }
+
+
+
+    p {font-size: 24px;
+    }
+    
+    /* Застосується до всіх посилань на сторінці */
+    a {
+        text-decoration: none;     }
+
 
 header {
     background: #333;
-    color: #fff;
+    color: #bc4545;
     padding: 10px 20px;
     text-align: center;
-}
-
-
-header {
    position: relative;
     text-align: center;
    
     /* Змінюйте на бажаний колір тексту */
-    background-image: url('pictures/a_ukrainian_flag_w_image_.png');
+    background-image: url('pictures/sun_shine.jpg');
         /* Вкажіть URL вашої картинки */
         background-size: cover;
         /* Розтягує картинку */
@@ -83,8 +58,8 @@ body {
 .search-container button {
     padding: 10px;
     border: none;
-    background-color: #28a745;
-    color: white;
+    background-color: var(--brand-color);
+    color: rgb(128, 13, 13);
     border-radius: 4px;
     cursor: pointer;
 }
@@ -181,6 +156,11 @@ body {
     /* Обмежити ширину зображення */
     margin-right: 15px;
     /* Відступ між зображенням та текстом */
+}
+
+.title {
+    font-weight: 9000000000; 
+    color: var(--brand-color);
 }
 
 

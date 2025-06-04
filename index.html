@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css"/>
-    <title>UkrainDelights</title>
+    <title>Sun Art</title>
 </head>
 
 <body>
 
 
-<header>
+<header class="header">
 
     <section class="dropdown">
         <button>Menu</button>
         <div class="dropdown-content">
-            <ul>
+            <ul class="list">
                 <li><a href="./red-t-shirt.html">Пункт 1</a></li>
                 <li><a href="./yelow-pant.html">Пункт 2</a></li>
                 <li><a href="./red-t-shirt.html">Пункт 3</a></li>
@@ -45,7 +45,9 @@
 
 </header>
     
-<h1>UkrainDelights</h1>
+<h1 class="title" >Sun Art</h1>
+
+
 
 <section>
    
@@ -86,9 +88,9 @@
 
     <section>
         <div class="filter-container">
-            <label class="filter-label" for="category">Категорія:</label>
-            <select id="category" class="filter-input">
-                <option value="">--Виберіть категорію--</option>
+            <label class="filter-label" for="topic">Topic:</label>
+            <select id="topic" class="filter-input">
+                <option value="">--select a topic--</option>
                 <option value="electronics">Електроніка</option>
                 <option value="clothing">Одяг</option>
                 <option value="home">Дім</option>
@@ -140,7 +142,7 @@
         
         <script>
             function applyFilter() {
-                const category = document.getElementById('category').value;
+                const topic = document.getElementById('topic').value;
                 const sizeClothing = document.getElementById('size-clothing').value;
                 const sizeShoes = document.getElementById('size-shoes').value;
                 const color = document.getElementById('color').value;
@@ -149,7 +151,7 @@
                 const maxPrice = document.getElementById('max-price').value;
 
                 alert(`Фільтр застосовано: 
-                        Категорія: ${category}, 
+                        Категорія: ${topic}, 
                         Розмір одягу: ${sizeClothing}, 
                         Розмір взуття: ${sizeShoes}, 
                         Колір: ${color}, 
