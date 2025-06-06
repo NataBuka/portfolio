@@ -1,18 +1,38 @@
 :root {
     --brand-color: #2196f3;
-  
-
+    --primary-text-font-size: 24px;
+    --primary-text-weight: 400;
+    --primary-text-color: #ccc;
+    --primary-font-family: Arial, sans-serif;
+    --primary-button-color:#fff;
+    --primary-button-conditions-color:#218838;
+    --primary-button-text-conditions-color: #ddd;
+    --primary-button-text-color: #fff;
+    --primary-background-light-color: #d6eb19;
+    --primary-background-dark-color: #323131;
 }
 
 
 
-    p {font-size: 24px;
-    }
+  
     
-    /* Застосується до всіх посилань на сторінці */
-    a {
-        text-decoration: none;     }
+    /*==========================   UTILITY   ============================= */
 
+
+
+    a {
+        text-decoration: none; 
+        list-style: none;    }
+
+
+    body {
+           font-family: var(--primary-font-family);
+           background-color: var(--primary-background-color);   }    
+
+    /*==========================   finish UTILITY   =========================== */
+
+
+    /*==========================   header   =================================== */
 
 header {
     background: #333;
@@ -35,14 +55,14 @@ header {
   
         /* Поміщає зображення позаду тексту */
 }
+    /*==========================   finish header   ================================ */
 
 
-/*   Style for SEARCH  */
+
+    /*==========================    SEARCH  ======================================= */
 
 
-body {
-    font-family: Arial, sans-serif;
-}
+
 
 .search-container {
     margin: 20px;
@@ -59,24 +79,24 @@ body {
     padding: 10px;
     border: none;
     background-color: var(--brand-color);
-    color: rgb(128, 13, 13);
+    color: var(--primary-button-color);
     border-radius: 4px;
     cursor: pointer;
 }
 
-.search-container button:hover {
-    background-color: #218838;
+.search-container button:hover,
+                  button:focus{
+    background-color: var(--primary-button-conditions-color);
 }
 
 
-/* finish style for SEARCH  */
+/*===========================finish style for SEARCH =================================== */
 
 
 
-/*      style for PROFILE    */
+/*==================================   PROFILE  =======================================  */
 
 .profile-card {
-    background-color: #fff;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -107,11 +127,11 @@ body {
     margin-top: 10px;
     font-style: italic;
 }
- /*finish style for PROFILE  */
+ /*=====================================  finish PROFILE  ==================================*/
 
 
 
-/*  style for CATALOG  */
+/*======================================  CATALOG  ========================================*/
 
 /*body {
     font-family: Arial, sans-serif;
@@ -130,10 +150,14 @@ body {
 
 
 
+
+
 .product-list ul {
-    list-style-type: none;
-    /* Вимкнути маркери */
-    padding: 0;
+    
+   
+    list-style: none;
+    text-decoration: none;
+   
 }
 
 .product-list li {
@@ -149,6 +173,7 @@ body {
     color: #333;
     display: flex;
     align-items: center;
+    list-style: none;
 }
 
 .product-list img {
@@ -165,7 +190,7 @@ body {
 
 
 /* finish style for CATALOG  */
-h1{
+.title{
     color:var(--basc-text-color);
 
 }
@@ -202,7 +227,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     background: #333;
-    color: #fff;
+    color: var(--primary-background-color);
     position: relative;
     bottom: 0;
     width: 100%;
